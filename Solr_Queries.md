@@ -21,7 +21,7 @@ SELECT * FROM rtfap.transactions;
 Retrieve data for all transactions in the TRANSACTIONS table where the amount is greater than a specified value
 http://[server_IP:Express_port]/getalltransactionsbyamount/1000
 ```
-SELECT * FROM rtfap.transactions WHERE solr_query = '{"q":"*:*",  "fq":"amount:[1000 TO *]"}}';
+SELECT * FROM rtfap.transactions WHERE solr_query = '{"q":"*:*",  "fq":"amount:[1000 TO *]"}';
 ```
 
 ###3. List all rejected transactions
