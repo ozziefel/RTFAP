@@ -81,14 +81,18 @@ SELECT * FROM rtfap.transactions WHERE solr_query = '{"q":"*:*", "fq":["txn_time
 
 9.c Retrieve data for all transactions in the TRANSACTIONS table tagged as "Fraudulent" over the last day
 http://[server_IP:Express_port]/getallfraudulenttransactionsinlastperiod/DAY
+```
 SELECT * FROM rtfap.transactions WHERE solr_query = '{"q":"*:*", "fq":["txn_time:[NOW-7DAY TO *]", "tags:Fraudulent"]}';
+```
 
 ##CQL Queries On The Roll-Up Tables
 
 ###10. List all transactions for a merchant on a specified day
 Retrieve data for all transactions for the specified day in the DAILYTXNS_BYMERCHANT rollup table where the merchant = "GAP"
 http://[server_IP:Express_port]/getdailytransactionsbymerchant/GAP/20160309
+```
 SELECT * FROM rtfap.dailytxns_bymerchant WHERE merchant='GAP' AND day=20160309;
+```
 
 ###11. List aggregated purchase history for a specific card and year
 Retrieve data for all transactions for the specified year in the YEARLYAGGREGATES_BYCC rollup table where the card number = "1234123412341235"
