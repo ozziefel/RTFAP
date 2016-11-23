@@ -1,5 +1,7 @@
 # RTFAP - Real-time Fraud Analysis Platform
 
+# Nov 2016 - obsoleted by RTFAP2 at https://github.com/simonambridge/RTFAP2
+
 Contributors:
 - Simon Ambridge  - Java-based Solr ReSTful interface (acknowledgements to Patrick Callaghan), documentation
 - Kunal Kusoorkar - Roll-up analytics and draft data model
